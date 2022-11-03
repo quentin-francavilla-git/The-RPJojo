@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{61C06D81-5513-4230-A782-2A3096F2F4CB}</ProjectGuid>
+    <RootNamespace>Starfield</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TheRPJojo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)sfml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)sfml\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;csfml-audio.lib;csfml-graphics.lib;csfml-network.lib;csfml-system.lib;csfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\my\my_convert_char_int.c" />
+    <ClCompile Include="lib\my\my_getnbr.c" />
+    <ClCompile Include="lib\my\my_getnbr_base.c" />
+    <ClCompile Include="lib\my\my_itoa.c" />
+    <ClCompile Include="lib\my\my_memset.c" />
+    <ClCompile Include="lib\my\my_putchar.c" />
+    <ClCompile Include="lib\my\my_putstr.c" />
+    <ClCompile Include="lib\my\my_put_nbr.c" />
+    <ClCompile Include="lib\my\my_revstr.c" />
+    <ClCompile Include="lib\my\my_strcat.c" />
+    <ClCompile Include="lib\my\my_strcmp.c" />
+    <ClCompile Include="lib\my\my_strcpy.c" />
+    <ClCompile Include="lib\my\my_strlen.c" />
+    <ClCompile Include="lib\my\my_strncmp.c" />
+    <ClCompile Include="lib\my\my_strncpy.c" />
+    <ClCompile Include="lib\my\my_str_to_wordtab.c" />
+    <ClCompile Include="src\characters\cha\cha_create_sprite.c" />
+    <ClCompile Include="src\characters\cha\cha_display.c" />
+    <ClCompile Include="src\characters\cha\cha_rect.c" />
+    <ClCompile Include="src\characters\cha\cha_sprite_gestion.c" />
+    <ClCompile Include="src\characters\cha\cha_sprite_rect.c" />
+    <ClCompile Include="src\characters\cha\cha_sprite_rect_reset.c" />
+    <ClCompile Include="src\characters\cha\cha_var.c" />
+    <ClCompile Include="src\characters\dio\dio_create_sprite.c" />
+    <ClCompile Include="src\characters\dio\dio_display.c" />
+    <ClCompile Include="src\characters\dio\dio_rect.c" />
+    <ClCompile Include="src\characters\dio\dio_sprite_gestion.c" />
+    <ClCompile Include="src\characters\dio\dio_sprite_rect.c" />
+    <ClCompile Include="src\characters\dio\dio_sprite_rect_reset.c" />
+    <ClCompile Include="src\characters\dio\dio_var.c" />
+    <ClCompile Include="src\characters\hol\hol_create_sprite.c" />
+    <ClCompile Include="src\characters\hol\hol_display.c" />
+    <ClCompile Include="src\characters\hol\hol_rect.c" />
+    <ClCompile Include="src\characters\hol\hol_sprite_gestion.c" />
+    <ClCompile Include="src\characters\hol\hol_sprite_rect.c" />
+    <ClCompile Include="src\characters\hol\hol_sprite_rect_reset.c" />
+    <ClCompile Include="src\characters\hol\hol_var.c" />
+    <ClCompile Include="src\characters\ice\door2_display.c" />
+    <ClCompile Include="src\characters\ice\ice_create_sprite.c" />
+    <ClCompile Include="src\characters\ice\ice_display.c" />
+    <ClCompile Include="src\characters\ice\ice_rect.c" />
+    <ClCompile Include="src\characters\ice\ice_sprite_gestion.c" />
+    <ClCompile Include="src\characters\ice\ice_sprite_rect.c" />
+    <ClCompile Include="src\characters\ice\ice_sprite_rect_reset.c" />
+    <ClCompile Include="src\characters\ice\ice_var.c" />
+    <ClCompile Include="src\characters\joseph\jo_create_sprite.c" />
+    <ClCompile Include="src\characters\joseph\jo_display.c" />
+    <ClCompile Include="src\characters\joseph\jo_rect.c" />
+    <ClCompile Include="src\characters\joseph\jo_sprite_gestion.c" />
+    <ClCompile Include="src\characters\joseph\jo_sprite_rect.c" />
+    <ClCompile Include="src\characters\joseph\jo_var.c" />
+    <ClCompile Include="src\characters\jotaro\jotaro_create_sprite.c" />
+    <ClCompile Include="src\characters\jotaro\jotaro_display.c" />
+    <ClCompile Include="src\characters\jotaro\jotaro_rect.c" />
+    <ClCompile Include="src\characters\jotaro\jotaro_reset_position.c" />
+    <ClCompile Include="src\characters\jotaro\jotaro_sprite_gestion.c" />
+    <ClCompile Include="src\characters\jotaro\jotaro_sprite_rect.c" />
+    <ClCompile Include="src\characters\jotaro\jotaro_sprite_rect_reset.c" />
+    <ClCompile Include="src\characters\jotaro\jotaro_sprite_rect_walk.c" />
+    <ClCompile Include="src\characters\jotaro\jotaro_var.c" />
+    <ClCompile Include="src\characters\jotaro\stats\stats_create_sprite.c" />
+    <ClCompile Include="src\characters\jotaro\stats\stats_create_text.c" />
+    <ClCompile Include="src\characters\jotaro\stats\stats_display.c" />
+    <ClCompile Include="src\characters\jotaro\stats\stats_gestion.c" />
+    <ClCompile Include="src\characters\jotaro\stats\stats_var.c" />
+    <ClCompile Include="src\characters\kakyo\kak_create_sprite.c" />
+    <ClCompile Include="src\characters\kakyo\kak_display.c" />
+    <ClCompile Include="src\characters\kakyo\kak_rect.c" />
+    <ClCompile Include="src\characters\kakyo\kak_sprite_gestion.c" />
+    <ClCompile Include="src\characters\kakyo\kak_sprite_rect.c" />
+    <ClCompile Include="src\characters\kakyo\kak_var.c" />
+    <ClCompile Include="src\characters\kan\kan_create_sprite.c" />
+    <ClCompile Include="src\characters\kan\kan_display.c" />
+    <ClCompile Include="src\characters\kan\kan_rect.c" />
+    <ClCompile Include="src\characters\kan\kan_sprite_gestion.c" />
+    <ClCompile Include="src\characters\kan\kan_sprite_rect.c" />
+    <ClCompile Include="src\characters\kan\kan_sprite_rect_reset.c" />
+    <ClCompile Include="src\characters\kan\kan_var.c" />
+    <ClCompile Include="src\characters\mar\mar_create_sprite.c" />
+    <ClCompile Include="src\characters\mar\mar_display.c" />
+    <ClCompile Include="src\characters\mar\mar_rect.c" />
+    <ClCompile Include="src\characters\mar\mar_sprite_gestion.c" />
+    <ClCompile Include="src\characters\mar\mar_sprite_rect.c" />
+    <ClCompile Include="src\characters\mar\mar_sprite_rect_reset.c" />
+    <ClCompile Include="src\characters\mar\mar_var.c" />
+    <ClCompile Include="src\characters\mid\mid_create_sprite.c" />
+    <ClCompile Include="src\characters\mid\mid_display.c" />
+    <ClCompile Include="src\characters\mid\mid_rect.c" />
+    <ClCompile Include="src\characters\mid\mid_sprite_gestion.c" />
+    <ClCompile Include="src\characters\mid\mid_sprite_rect.c" />
+    <ClCompile Include="src\characters\mid\mid_sprite_rect_reset.c" />
+    <ClCompile Include="src\characters\mid\mid_var.c" />
+    <ClCompile Include="src\characters\pol\pol_create_sprite.c" />
+    <ClCompile Include="src\characters\pol\pol_display.c" />
+    <ClCompile Include="src\characters\pol\pol_rect.c" />
+    <ClCompile Include="src\characters\pol\pol_sprite_gestion.c" />
+    <ClCompile Include="src\characters\pol\pol_sprite_rect.c" />
+    <ClCompile Include="src\characters\pol\pol_var.c" />
+    <ClCompile Include="src\create\create_all.c" />
+    <ClCompile Include="src\create\create_all2.c" />
+    <ClCompile Include="src\create\create_all_char.c" />
+    <ClCompile Include="src\create\create_all_char2.c" />
+    <ClCompile Include="src\create\create_clock.c" />
+    <ClCompile Include="src\create\create_music.c" />
+    <ClCompile Include="src\create\start_window.c" />
+    <ClCompile Include="src\create\variables.c" />
+    <ClCompile Include="src\dialogues\cha_dial.c" />
+    <ClCompile Include="src\dialogues\dialogues.c" />
+    <ClCompile Include="src\dialogues\dialogues_display.c" />
+    <ClCompile Include="src\dialogues\dial_sprite_creation.c" />
+    <ClCompile Include="src\dialogues\dial_sprite_creation2.c" />
+    <ClCompile Include="src\dialogues\dial_var.c" />
+    <ClCompile Include="src\dialogues\dio_dial.c" />
+    <ClCompile Include="src\dialogues\hol_dial.c" />
+    <ClCompile Include="src\dialogues\ice_dial.c" />
+    <ClCompile Include="src\dialogues\joseph_dial.c" />
+    <ClCompile Include="src\dialogues\kakyo_dial.c" />
+    <ClCompile Include="src\dialogues\kan_dial.c" />
+    <ClCompile Include="src\dialogues\mar_dial.c" />
+    <ClCompile Include="src\dialogues\mid_dial.c" />
+    <ClCompile Include="src\dialogues\pol_dial.c" />
+    <ClCompile Include="src\dialogues\pol_dial_2.c" />
+    <ClCompile Include="src\display\display.c" />
+    <ClCompile Include="src\display\display_fight.c" />
+    <ClCompile Include="src\env\env_create_sprite.c" />
+    <ClCompile Include="src\env\env_gestion.c" />
+    <ClCompile Include="src\env\env_put_textures.c" />
+    <ClCompile Include="src\events\events.c" />
+    <ClCompile Include="src\events\user_inputs_events.c" />
+    <ClCompile Include="src\fights\fail_qte.c" />
+    <ClCompile Include="src\fights\fights_interactions.c" />
+    <ClCompile Include="src\fights\fight_quit.c" />
+    <ClCompile Include="src\fights\life\life.c" />
+    <ClCompile Include="src\fights\qte_actions.c" />
+    <ClCompile Include="src\fights\qte_spe.c" />
+    <ClCompile Include="src\fights\vs_cha.c" />
+    <ClCompile Include="src\fights\vs_dio.c" />
+    <ClCompile Include="src\fights\vs_hol.c" />
+    <ClCompile Include="src\fights\vs_ice.c" />
+    <ClCompile Include="src\fights\vs_joseph.c" />
+    <ClCompile Include="src\fights\vs_kakyo.c" />
+    <ClCompile Include="src\fights\vs_kan.c" />
+    <ClCompile Include="src\fights\vs_mar.c" />
+    <ClCompile Include="src\fights\vs_mid.c" />
+    <ClCompile Include="src\fights\vs_pol.c" />
+    <ClCompile Include="src\hud\fight\explo_sprite_gestion.c" />
+    <ClCompile Include="src\hud\fight\fight_display_items.c" />
+    <ClCompile Include="src\hud\fight\fight_items_interactions.c" />
+    <ClCompile Include="src\hud\fight\fight_items_reset.c" />
+    <ClCompile Include="src\hud\fight\hud_fight_create_sprite.c" />
+    <ClCompile Include="src\hud\fight\hud_fight_create_sprite_2.c" />
+    <ClCompile Include="src\hud\fight\hud_fight_create_txt.c" />
+    <ClCompile Include="src\hud\fight\hud_fight_create_txt_2.c" />
+    <ClCompile Include="src\hud\fight\hud_fight_sprite_gestion.c" />
+    <ClCompile Include="src\hud\fight\hud_fight_var.c" />
+    <ClCompile Include="src\hud\fight\hud_fight_var_2.c" />
+    <ClCompile Include="src\hud\inventory\inventory_create_sprite.c" />
+    <ClCompile Include="src\hud\inventory\inventory_display.c" />
+    <ClCompile Include="src\hud\inventory\inventory_interactions.c" />
+    <ClCompile Include="src\hud\inventory\inventory_var.c" />
+    <ClCompile Include="src\hud\other\hud_other_create_sprite.c" />
+    <ClCompile Include="src\hud\other\hud_other_var.c" />
+    <ClCompile Include="src\hud\quests\quests_create_sprite.c" />
+    <ClCompile Include="src\hud\quests\quests_display.c" />
+    <ClCompile Include="src\hud\quests\quests_interactions.c" />
+    <ClCompile Include="src\hud\quests\quests_var.c" />
+    <ClCompile Include="src\items\items_create_sprite.c" />
+    <ClCompile Include="src\items\items_display.c" />
+    <ClCompile Include="src\items\items_interactions.c" />
+    <ClCompile Include="src\items\items_var.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\menu\buttons.c" />
+    <ClCompile Include="src\menu\create_sprite_menu.c" />
+    <ClCompile Include="src\menu\create_sprite_menu_2.c" />
+    <ClCompile Include="src\menu\menu.c" />
+    <ClCompile Include="src\menu\menu_display.c" />
+    <ClCompile Include="src\menu\over_buttons.c" />
+    <ClCompile Include="src\menu\pause_game.c" />
+    <ClCompile Include="src\menu\pressed_buttons.c" />
+    <ClCompile Include="src\menu\variables_menu.c" />
+    <ClCompile Include="src\rpg.c" />
+    <ClCompile Include="src\sprite_gestion\sprite_gestion.c" />
+    <ClCompile Include="src\tools\destroy.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\lib.h" />
+    <ClInclude Include="include\my_rpg.h" />
+    <ClInclude Include="lib\my\lib.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
