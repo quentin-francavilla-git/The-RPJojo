@@ -1,5 +1,7 @@
 ## Menu
 
+###The RPJojo is a role-playing game that immerses players in the unique, vibrant universe of Jojo's Bizarre Adventure.
+
 ![alt text](https://i.imgur.com/eD3spyj.png)
 
 ## Preview
